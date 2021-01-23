@@ -1,0 +1,66 @@
+			GIT BRANCHING
+
+================
+SECTION 1 : HTML
+================
+mkdir assignment
+cd assignment
+touch README.txt
+git init
+git add README.txt
+git commit -m "initial commit"
+git branch html-assignments
+git checkout html-assignments
+git add index.html
+git commit -m "initial commit in html-assignments"
+# (Do some changes in index.html file)
+git commit -m "2nd commit in new branch"
+git checkout master
+git merge html-assignments
+git branch -d html-assignments
+
+===============
+SECTION 2: CSS
+================
+git branch css-assignments
+git checkout css-assignments
+#(copy css assignment into assignment folder. I am takin index.css file as css assignment)
+git add.
+git commit -m "1st commit in css-assignment branch"
+#( Do changes in README.txt file)
+git add.
+git commit -m "2nd commit in css-assignment branch"
+git checkout master
+#( Again do changes in README.txt at line 3)
+git add.
+git commit -m "initial commit in master branch"
+git checkout css-assignments
+#( Do changes in css assignments)
+git add.
+git commit -m "3rd commit in css-assignments"
+git checkout master
+git merge css-assignments
+git branch -d css-assignments
+
+==============
+SECTION 3: JS
+==============
+git branch js-assignments
+git checkout js-assignments
+# (Copied all js asignment into assignments folder )
+git add.
+git commit -m "1st commit in js-assignments branch"
+#( Do changes in README.txt file )
+git add.
+git commit -m "2nd commit in js-assignments branch"
+git checkout master
+# (Do changes in README.txt at line 1)
+git add.
+git commit -m "initial commit in master branch"
+git checkout js-assignments
+#(Do changes into your js-assignments)
+git add.
+git commit -m "3rd commit in js-assignments branch"
+git checkout master
+git merge js-assignments
+git branch -d js-assignments
